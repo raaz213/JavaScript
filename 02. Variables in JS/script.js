@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
+
       // Using var
       var name = "Raj";
       console.log(name); // Output: Raj
@@ -18,6 +10,4 @@
       // Using const
       const country = "Nepal";
       console.log(country); // Output: Nepal
-    </script>
-  </body>
-</html>
+    

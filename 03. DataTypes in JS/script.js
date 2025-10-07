@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
+// Data Types in JavaScript
+
+// In JavaScript, data types are divided into two main categories: 
+// 1. Primitive data types
+// 2. Non-primitive (or reference) data types
+
       //1. Premitive datatypes
 
       // String → text
@@ -16,6 +13,7 @@
       let age = 24;
       let pi = 3.14;
       console.log(typeof age); // number
+      console.log(typeof pi); // number
       // Boolean → true or false
       let isStudent = true;
       console.log(typeof isStudent); // boolean
@@ -45,6 +43,4 @@
         //code to be executed
       }
       console.log(typeof greet); //function
-    </script>
-  </body>
-</html>
+    
