@@ -1,0 +1,67 @@
+Introduction to JavaScript
+🔹 What is JavaScript?
+
+JavaScript (JS) is a client-side scripting language mainly used to make web pages interactive and dynamic.
+
+It was created in 1995 by Brendan Eich at Netscape.
+
+Runs directly in the browser (like Chrome, Firefox, Edge, Safari).
+
+It is one of the core technologies of the web along with HTML and CSS.
+
+🔹 Why JavaScript?
+
+HTML → Provides structure of a web page.
+
+CSS → Provides style and design.
+
+JavaScript → Provides interactivity and behavior.
+
+🔹 Features of JavaScript
+
+Lightweight & simple – Easy to learn and use.
+
+Interpreted – Runs directly in the browser without compilation.
+
+Event-driven – Can respond to user actions (clicks, inputs, etc.).
+
+Cross-platform – Runs on any browser and device.
+
+Versatile – Can be used for:
+
+Frontend (Browser scripting – e.g., form validation, animations).
+
+Backend (via Node.js – server-side apps, APIs).
+
+Mobile & Desktop apps (with frameworks like React Native, Electron).
+
+🔹 Example: First JavaScript Program
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <h1>Hello JavaScript</h1>
+
+  <script>
+    // This will show a popup message
+    alert("Welcome to JavaScript!");
+  </script>
+</body>
+</html>
+
+
+✅ When you open this in a browser, it will display a popup box saying “Welcome to JavaScript!”
+
+🔹 What JavaScript Can Do?
+
+Validate form input (e.g., check if email is entered).
+
+Create interactive UI (sliders, dropdowns, popups).
+
+Manipulate HTML & CSS dynamically (DOM manipulation).
+
+Fetch data from servers (AJAX / Fetch API).
+
+Create web apps, games, mobile apps, and even server-side apps.
