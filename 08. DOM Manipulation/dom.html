@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <h2 class="msg">Welcome to JavaScript</h2>
+    <p>This is a paragraph</p>
+    <p class="para2">This is second paragraph</p>
+
+    <script>
+      const title = document.getElementById("title");
+      const msg = document.getElementsByClassName("msg");
+      const para = document.getElementsByTagName("p");
+
+      // OR you can do same using querySelector as well
+
+      //const title =document.querySelector("#title"); // Select by ID
+      //const msg = document.querySelector(".msg"); // Select by class
+      // const para = document.querySelectorAll("p"); // Select all <p> elements
+      const para2 = document.querySelector(".para2"); // Select by class
+
+      title.style.color = "green";
+      msg[0].style.backgroundColor = "orange";
+      para[0].style.color = "red";
+      para[0].style.fontSize = "20px";
+      para2.style.fontWeight = "bold";
+      para2.textContent = "This text is changed using DOM!";
+
+      let newPara = document.createElement("p");
+      newPara.textContent = "This is a new paragraph.";
+      document.body.appendChild(newPara);
+    </script>
+  </body>
+</html>

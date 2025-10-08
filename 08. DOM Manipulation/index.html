@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Old Heading</h1>
+    <p id="para">Old text</p>
+    <button id="btn">Change Text</button>
+
+    <script>
+      const title = document.getElementById("title");
+      const para = document.getElementById("para");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        title.textContent = "New Heading!";
+        para.textContent = "You clicked the button.";
+        para.style.color = "blue";
+      });
+    </script>
+  </body>
+</html>

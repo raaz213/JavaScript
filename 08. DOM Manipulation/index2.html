@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #box {
+      background-color: lightgray;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 10px;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="heading">Welcome to DOM Manipulation</h2>
+  <div id="box">
+    <p class="text">This is a sample paragraph.</p>
+  </div>
+
+  <button id="changeTextBtn">Change Text & Color</button>
+  <button id="addElementBtn">Add New Element</button>
+  <button id="removeElementBtn">Remove Paragraph</button>
+
+  <script>
+    // Accessing elements
+    const heading = document.getElementById("heading");
+    const box = document.querySelector("#box");
+    const text = document.querySelector(".text");
+
+    // 1️⃣ Changing text & style
+    document.getElementById("changeTextBtn").addEventListener("click", () => {
+      heading.textContent = "Hello, JavaScript!";
+      heading.style.color = "blue";
+      heading.style.fontSize = "28px";
+    });
+
+    // 2️⃣ Adding a new element
+    document.getElementById("addElementBtn").addEventListener("click", () => {
+      const newPara = document.createElement("p");
+      newPara.textContent = "DOM Manipulation is fun!";
+      newPara.style.color = "green";
+      box.appendChild(newPara);
+    });
+
+    // 3️⃣ Removing an element
+    document.getElementById("removeElementBtn").addEventListener("click", () => {
+      const paraToRemove = document.querySelector(".text");
+      if (paraToRemove) {
+        paraToRemove.remove();
+        alert("Paragraph removed!");
+      } else {
+        alert("No paragraph to remove!");
+      }
+    });
+  </script>
+
+</body>
+</html>

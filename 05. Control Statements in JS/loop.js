@@ -34,6 +34,9 @@ for (let fruit of fruits) {
   console.log(fruit);  
 }
 
+// 6. forEach loop (for arrays)
+fruits.forEach((fruit) => console.log(fruit));
+
 // break and continue
 for (let i = 1; i <= 5; i++) {
     if (i === 3) {
