@@ -41,14 +41,14 @@
     const box = document.querySelector("#box");
     const text = document.querySelector(".text");
 
-    // 1️⃣ Changing text & style
+    // 1. Changing text & style
     document.getElementById("changeTextBtn").addEventListener("click", () => {
       heading.textContent = "Hello, JavaScript!";
       heading.style.color = "blue";
       heading.style.fontSize = "28px";
     });
 
-    // 2️⃣ Adding a new element
+    // 2. Adding a new element
     document.getElementById("addElementBtn").addEventListener("click", () => {
       const newPara = document.createElement("p");
       newPara.textContent = "DOM Manipulation is fun!";
@@ -56,7 +56,7 @@
       box.appendChild(newPara);
     });
 
-    // 3️⃣ Removing an element
+    // 3. Removing an element
     document.getElementById("removeElementBtn").addEventListener("click", () => {
       const paraToRemove = document.querySelector(".text");
       if (paraToRemove) {

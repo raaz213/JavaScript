@@ -12,9 +12,10 @@
     <p class="para2">This is second paragraph</p>
 
     <script>
-      const title = document.getElementById("title");
-      const msg = document.getElementsByClassName("msg");
-      const para = document.getElementsByTagName("p");
+        // Accessing elements
+      const title = document.getElementById("title"); // Select by ID
+      const msg = document.getElementsByClassName("msg"); // Select by class
+      const para = document.getElementsByTagName("p");  // Select all Tag name i.e.<p> elements
 
       // OR you can do same using querySelector as well
 
@@ -23,6 +24,7 @@
       // const para = document.querySelectorAll("p"); // Select all <p> elements
       const para2 = document.querySelector(".para2"); // Select by class
 
+    // Changing text and style
       title.style.color = "green";
       msg[0].style.backgroundColor = "orange";
       para[0].style.color = "red";
@@ -30,9 +32,12 @@
       para2.style.fontWeight = "bold";
       para2.textContent = "This text is changed using DOM!";
 
+        // Creating and adding new element
       let newPara = document.createElement("p");
       newPara.textContent = "This is a new paragraph.";
-      document.body.appendChild(newPara);
+      document.body.appendChild(newPara); // to add in the end
+      //document.body.prepend(newPara); // to add in the beginning
+      //newPara.remove(); // to remove the element
     </script>
   </body>
 </html>
