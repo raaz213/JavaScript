@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Array Destructuring:
+      const fruits = ["apple", "banana", "mango"];
+      const [first, second, third] = fruits;
+      console.log(first); // apple
+
+      //Object Destructuring:
+      const person = { name: "Raj", age: 24, country: "Nepal" };
+      const { name, age } = person;
+      console.log(name); // Raj
+      console.log(age); // 24
+
+      // You can also rename:
+      const { country: nation } = person;
+      console.log(nation); // Nepal
+    </script>
+  </body>
+</html>

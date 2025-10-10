@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Spread and rest opetator</h1>
+    <p>go to console</p>
+    <script>
+      //1. Spread Operator — expands elements (Used to copy or merge arrays/objects.)
+
+      const arr1 = [1, 2, 3];
+      const arr2 = [...arr1, 4, 5]; // spread
+      console.log(arr2); // [1, 2, 3, 4, 5]
+
+      //With objects:
+      const user = { name: "Raj", age: 24 };
+      const updated = { ...user, country: "Nepal" };
+      console.log(updated); // {name: "Raj", age: 24, country: "Nepal"}
+
+      //2. Rest Operator — collects multiple elements (Used in function parameters to accept variable number of arguments.)
+      function sum(...numbers) {
+        return numbers.reduce((total, n) => total + n, 0);
+      }
+
+      console.log(sum(1, 2, 3, 4)); // Output: 10
+    </script>
+  </body>
+</html>

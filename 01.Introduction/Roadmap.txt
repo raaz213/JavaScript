@@ -12,7 +12,8 @@ DOM Manipulation
 
 Events
 
-ES6 Features → let, const, arrow functions, promises
+ES6+ Features → modules (import/export), destructuring, spread/rest operators, template literals, and classes.
+
 
 Advanced Concepts → async/await, classes, modules
 
