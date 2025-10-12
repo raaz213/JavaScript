@@ -1,0 +1,33 @@
+<!-- Use switch to create a basic calculator for +, -, *, and / operations. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+      let num1 = parseFloat(prompt("Enter first number:"));
+      let operator = prompt("Enter operator (+, -, *, /):");
+      let num2 = parseFloat(prompt("Enter second number:"));
+
+      switch (operator) {
+        case "+":
+          document.write("Result: " + (num1 + num2));
+          break;
+        case "-":
+          document.write("Result: " + (num1 - num2));
+          break;
+        case "*":
+          document.write("Result: " + (num1 * num2));
+          break;
+        case "/":
+          document.write("Result: " + (num1 / num2));
+          break;
+        default:
+          document.write("Invalid operator");
+      }
+    </script>
+ </body>
+ </html>

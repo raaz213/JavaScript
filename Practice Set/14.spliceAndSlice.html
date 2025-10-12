@@ -1,0 +1,28 @@
+<!-- Practice adding, removing, and copying parts of an array. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9];
+        console.log("Original Array: " + arr);
+
+        // Splice: Remove 3 elements starting from index 2
+        let splicedArray = arr.splice(2, 3);
+        console.log("After Splice (removed 3 elements from index 2): " + arr);
+        console.log("Spliced Elements: " + splicedArray);
+
+        // Slice: Create a new array from index 1 to 4 (not including 4)
+        let slicedArray = arr.slice(1, 4);
+        console.log("Sliced Array (from index 1 to 4): " + slicedArray);
+
+        // Copy the array using slice
+        let copiedArray = arr.slice();
+        console.log("Copied Array: " + copiedArray);
+    </script>
+ </body>
+ </html>

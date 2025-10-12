@@ -1,0 +1,32 @@
+<!-- Create an array of 5 numbers and find their total sum using a loop. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [5, 2, 3, 4, 5];
+      let totalSum = 0;
+      for (let i = 0; i < numbers.length; i++) {
+        totalSum = totalSum + numbers[i];
+      }
+      document.write("The total sum of an array is :" + totalSum);
+
+      // Using for...of loop
+     /* let numbers = [5, 2, 3, 4, 5];
+      let totalSum = 0;
+      for (let num of numbers) {
+        totalSum += num;
+      }
+      document.write(totalSum); */
+
+      // Using reduce (most concise)
+      /* let numbers = [5, 2, 3, 4, 5];
+      let totalSum = numbers.reduce((sum, num) => sum + num, 0);
+      document.write(totalSum); */
+    </script>
+  </body>
+</html>
